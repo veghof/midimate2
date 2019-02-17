@@ -1,0 +1,47 @@
+/* resource set indicies for MIDIMATE */
+
+#define LOCALOOP 0	/* form/dialog */
+#define INFO     1	/* BUTTON in tree LOCALOOP */
+#define KAN1     2	/* BUTTON in tree LOCALOOP */
+#define KAN2     3	/* BUTTON in tree LOCALOOP */
+#define KAN3     4	/* BUTTON in tree LOCALOOP */
+#define KAN4     5	/* BUTTON in tree LOCALOOP */
+#define KAN5     6	/* BUTTON in tree LOCALOOP */
+#define KAN6     7	/* BUTTON in tree LOCALOOP */
+#define KAN7     8	/* BUTTON in tree LOCALOOP */
+#define KAN8     9	/* BUTTON in tree LOCALOOP */
+#define THRU     10	/* BUTTON in tree LOCALOOP */
+#define KAN9     11	/* BUTTON in tree LOCALOOP */
+#define KAN10    12	/* BUTTON in tree LOCALOOP */
+#define KAN11    13	/* BUTTON in tree LOCALOOP */
+#define KAN12    14	/* BUTTON in tree LOCALOOP */
+#define KAN13    15	/* BUTTON in tree LOCALOOP */
+#define KAN14    16	/* BUTTON in tree LOCALOOP */
+#define KAN15    17	/* BUTTON in tree LOCALOOP */
+#define KAN16    18	/* BUTTON in tree LOCALOOP */
+#define MAPMIDI  19	/* BUTTON in tree LOCALOOP */
+#define LEAVE    21	/* BUTTON in tree LOCALOOP */
+#define STAY     22	/* BUTTON in tree LOCALOOP */
+#define TXT2     23	/* TEXT in tree LOCALOOP */
+#define TXT3     24	/* TEXT in tree LOCALOOP */
+#define LOCON    25	/* BUTTON in tree LOCALOOP */
+#define MAPVOL   26	/* BUTTON in tree LOCALOOP */
+#define MONITOR  27	/* BUTTON in tree LOCALOOP */
+#define LOCOFF   28	/* BUTTON in tree LOCALOOP */
+#define METRONOF 29	/* BUTTON in tree LOCALOOP */
+#define TEST     30	/* BUTTON in tree LOCALOOP */
+#define POLY     31	/* BUTTON in tree LOCALOOP */
+#define ATARIMET 33	/* BUTTON in tree LOCALOOP */
+#define MIDIMETR 34	/* BUTTON in tree LOCALOOP */
+#define PANIKK   35	/* BUTTON in tree LOCALOOP */
+#define MONO     36	/* BUTTON in tree LOCALOOP */
+#define INPTEMPO 37	/* FBOXTEXT in tree LOCALOOP */
+#define PATCH    39	/* FBOXTEXT in tree LOCALOOP */
+#define PATCHBUT 40	/* BUTTON in tree LOCALOOP */
+#define PLUSS1   41	/* BUTTON in tree LOCALOOP */
+#define ASIS     42	/* BUTTON in tree LOCALOOP */
+#define OMNION   43	/* BUTTON in tree LOCALOOP */
+#define THRUCHAN 44	/* FBOXTEXT in tree LOCALOOP */
+#define OMNIOFF  45	/* BUTTON in tree LOCALOOP */
+#define MTRONOTE 46	/* BUTTON in tree LOCALOOP */
+#define SLUTT    47	/* BUTTON in tree LOCALOOP */
