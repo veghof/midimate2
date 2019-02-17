@@ -1,0 +1,119 @@
+Atari ST / GFA Basic MIDI utility made in the 80s.
+
+MidiMate 2
+
+If you, like me, have some MIDI-modules and a master-keyboard, you 
+are  probably sick  and tired of having to run your sequenser just
+to play the modules.  MIDIMATE was written partially to solve this
+problem.  As  I worked on it,  I threw in some other features  you
+might find useful. After v.1,  I worked on it some more,  and some 
+new features can be found in MIDIMATE II:
+
+TITLE BAR      -    Copyright message.
+
+1-16           -    MIDI-channels.  Affects  all  commands  except
+                    THRU and PANIC.
+
+LOCAL OFF      -    Switches your master keyboard to LOCAL CONTROL
+                    off. The keys are now separated from its sound
+                    generators.
+
+LOCAL ON       -    Switches LOCAL CONTROL on. 
+
+POLY MODE ON   -    Switches POLY mode on.
+
+MOMO MODE ON   -    Switches MONO mode on.
+
+OMNI  MODE ON   -   Switches OMNI mode on.  The  MIDI  module  (or 
+                    keyboard)  that  was set to  the  channel  you 
+                    transmitted  the  message on will  now  accept 
+                    MIDI-data on all channels.
+
+OMNI MODE OFF  -    Switches OMNI mode off. MIDI will now only be 
+                    recieved on the chosen channel.
+
+TEST           -    Sends MIDI notes from C1 to C6 (in half-steps) 
+                    with a velocity of 100 on the chosen  channel. 
+                    Good for checking setups etc.
+
+PANIC          -    This kills all hanging notes. I do NOT use the 
+                    dedicated  ALL NOTES OFF  message  (controller 
+                    123)  for  this,   as  some  modules  do   not 
+                    recognize it.  Instead I send a MIDI  note-off 
+                    message for all notes on all channels. This is 
+                    why this command may seem a little "sluggish"! 
+                    PANIC also centers the  pitch  bend-wheel  and
+                    resets the modulation-wheel to zero.
+
+PATCH  CHANGE   -   Will  send a  PROGRAM CHANGE  command  on  the 
+                    current MIDI-channel. The number is determined 
+                    by the input  NUMBER. MIDI uses numbers 0-127, 
+                    but since most (?) keyboards use 1-128, I have 
+                    given you a choice in the buttons 0-127 and 1-
+                    128;  take your pick!  Since this is a feature 
+                    you  probably  will  be using often, it is the 
+                    default, i.e. just type the program number and 
+                    return, and the program change is sent.
+
+THRU           -    The main reason this program was born, this is 
+                    really very simple,  but also very helpful  if 
+                    your keyboard is connected to the ST's MIDI IN 
+                    and  your modules to the MIDI OUT  port.  This 
+                    setup  works ok inside your  sequenser  (using 
+                    its  THRU function),  but is no good from  the 
+                    desktop.  If  you click on THRU,  all is  rosy 
+                    again; everything recieved at the MIDI IN port 
+                    is sent to the MIDI OUT port. You can now play 
+                    your  modules without running your  sequenser. 
+                    Exit with any key. If you get stuck notes when 
+                    exiting, use the PANIC-button! 
+
+METRONOME       -   New in MIDIMATE II is the  METRONOME.  If this 
+                    is selected,  the THRU function will provide a 
+                    metronome.  There are some  options here.  You
+                    can select either ATARI or MIDI.  If ATARI  is
+                    selected,  the  metronome will be the standard 
+                    Atari  bell-sound.  If  MIDI  is  selected,  a
+                    (short,  so use a  triggered drum sound)  note 
+                    will be sent out the MIDI port on an  indipen-
+                    dent MIDI-channel. The channel number is typed
+                    in.  If you click the  METRONOME NOTE  button,
+                    you may  input the note from a MIDI  keyboard.
+                    TEMPO,  obviously,  affect both.  This is also
+                    typed in.
+
+MAP MIDI CHANNEL-   Also new in MIDIMATE II, when selected MAP MIDI
+                    CHANNEL  outputs  all  cannel  messages  on the 
+                    chosen MIDI channel. This takes effect when you
+                    use THRU.
+
+MOD WHEEL TO VOLUME-New feature. If selected, the  modulation-wheel
+                    works as a volume fader in the THRU function.
+
+MIDI MONITOR    -   New feature.  Opens a  window and  displays all
+                    incoming MIDI data.  Data is shown in  decimal,
+                    hex, and binary.  A short  description of every
+                    byte in plain english is also provided.  If you
+                    click on the right mousebutton,  you can switch
+                    a THRU function on/off. This is VERY slow,  but
+                    sometimes useful anyway,  so you get to choose.
+                    If the scrolling  text  moves too fast to read, 
+                    you can  pause it by  clicking  the left mouse-
+                    button and HOLDING it. Exit with any key.
+
+STAY or LEAVE  -    If STAY is selected,  the only way to exit  is 
+                    to click on QUIT.  If LEAVE is  selected,  you 
+                    will exit after sending a command. The default 
+                    is STAY. If you use MIDIMATE as a program,  do 
+                    not alter this setting, or  the  program  will 
+                    quit when you start using it!
+
+QUIT           -    Exits...
+
+MIDIMATE II  should work on any ST/Falcon in all resolutions above 
+ST low,  although it  is only tested in  ST high and ST medium. It 
+will work as an  accessory OR a program,  just change the extender 
+to PRG/ACC! When run as an accessory, MIDIMATE II uses 44k of your 
+RAM.
+
+MIDIMATE II is now public domain.
